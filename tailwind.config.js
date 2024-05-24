@@ -14,6 +14,7 @@ export default {
       ping: "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
       pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       bounce: "bounce 1s infinite",
+      meteor: "meteor 5s linear infinite",
     },
     aria: {
       busy: 'busy="true"',
@@ -603,6 +604,14 @@ export default {
         "50%": {
           transform: "none",
           animationTimingFunction: "cubic-bezier(0,0,0.2,1)",
+        },
+      },
+      meteor: {
+        "0%": { transform: "rotate(215deg) translateX(0)", opacity: 1 },
+        "70%": { opacity: 1 },
+        "100%": {
+          transform: "rotate(215deg) translateX(-500px)",
+          opacity: 0,
         },
       },
     },
